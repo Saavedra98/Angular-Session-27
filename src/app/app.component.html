@@ -1,19 +1,19 @@
 <div class=" rounded-lg p-5 w-1/2 mx-auto mt-10 bg-blue-100">
   
-  <h1 class="font-mono text-5xl text-center uppercase font-bold mb-5">Calculadora</h1>
+  <h1 class="font-mono text-3xl text-center uppercase font-bold mb-5">Calculadora</h1>
   
   <div class=" p-4 rounded-lg mb-5 bg-white ">
-    <label for="" class="font-mono text-2xl ">Numero 1: </label>
+    <label for="" class="font-mono text-xl ">Numero 1: </label>
     <input type="number" [(ngModel)]="numero1" class="border border-black rounded-lg p-2 w-full">
   </div>
 
   <div class=" p-4 rounded-lg mb-5 bg-white">
-    <label for="" class="font-mono text-2xl ">Numero 2: </label>
+    <label for="" class="font-mono text-xl ">Numero 2: </label>
     <input type="number" [(ngModel)]="numero2" class="border border-black rounded-lg p-2 w-full">
   </div>
   
   <div class=" p-4 rounded-lg mb-5 bg-white">
-    <select class="form-select" #operacion class="w-full font-mono text-2xl p-2">
+    <select class="form-select" #operacion class="w-full font-mono text-xl p-2">
       <option selected>Seleccione una operacion</option>
       <option value="1">Suma</option>
       <option value="2">Resta</option>
@@ -23,12 +23,12 @@
   </div>
 
   <div class=" p-4 rounded-lg mb-5 flex flex-col w-1/2 mx-auto">
-    <button class="rounded-lg bg-blue-500 px-5 py-2 text-2xl text-white font-bold hover:bg-blue-700 "  (click)="calcular(operacion.value)">Calcular</button>
+    <button class="rounded-lg bg-blue-500 px-5 py-2 text-xl text-white font-bold hover:bg-blue-700 "  (click)="calcular(operacion.value)">Calcular</button>
   </div>
   
   <div class="bg-green-500 p-5 rounded-lg " *ngIf="elemento">
-    <h1 class="text-center text-white font-bold font-mono text-3xl mb-5" >Resultado:</h1>
-    <p class="text-center text-white font-bold font-mono text-3xl">{{resultado}}</p>
+    <h1 class="text-center text-white font-bold font-mono text-2xl mb-5" >Resultado:</h1>
+    <p class="text-center text-white font-bold font-mono text-2xl">{{resultado}}</p>
   </div>
   
 </div>
