@@ -14,21 +14,15 @@ export class AppComponent {
 
   elemento = false;
 
-  calcular(operacion:string){
+  calcular(operacion:string, numero1:string, numero2:string):number{
 
-    if(operacion==='1'){
-      this.resultado = this.numero1 + this.numero2;
-    }else if(operacion === '2'){
-      this.resultado = this.numero1 - this.numero2;
-    }else if(operacion === '3'){
-      this.resultado = this.numero1 * this.numero2;
-    }else{
-      this.resultado = this.numero1 / this.numero2;
-    }
+    if(operacion=='+') this.resultado=Number(numero1)+Number(numero2)
+    else if(operacion=='-') this.resultado=Number(numero1)-Number(numero2)
+    else if(operacion=='*') this.resultado=Number(numero1)*Number(numero2)
+    else if(operacion=='/') this.resultado=Number(numero1)/Number(numero2)
 
     this.elemento = true;
-    
-
+    return this.resultado
   }
 
 
